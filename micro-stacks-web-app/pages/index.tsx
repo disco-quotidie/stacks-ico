@@ -18,7 +18,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to Stacks Dev Token ICO !
         </h1>
         <UserCard />
         <WalletConnectButton />
