@@ -18,7 +18,9 @@
 (var-set my-variable u2000)
 (print (var-get my-variable))
 
-
+(define-public (my-public-func (x uint) (y uint)) 
+  (ok (+ x y))
+)
 ;;
 
 ;; data maps
