@@ -14,27 +14,15 @@
 ;;
 
 ;; data vars
-(define-data-var my-variable uint u0)
-(var-set my-variable u2000)
-(print (var-get my-variable))
 
-(define-public (my-public-func (x uint) (y uint)) 
-  (ok (+ x y))
-)
 ;;
 
 ;; data maps
-(define-map counters principal uint)
+
 ;;
 
 ;; public functions
-(define-read-only (get-count (who principal)) 
-  (default-to u0 (map-get? counters who))
-)
 
-(define-public (count-up)
-  (ok (map-set counters tx-sender (+ (get-count tx-sender) u1)))
-)
 ;;
 
 ;; read only functions
