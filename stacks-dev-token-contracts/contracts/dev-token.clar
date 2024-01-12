@@ -14,6 +14,11 @@
 ;;
 
 ;; data vars
+(define-data-var my-variable uint u0)
+(var-set my-variable u2000)
+(print (var-get my-variable))
+
+
 ;;
 
 ;; data maps
